@@ -1,0 +1,272 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../IMA/FONDONEGRO_1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login_form{
+    background: rgba(64,64,64,0.15);
+    border: 3px solid rgba(255,255,255,0.3);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(30px);
+    text-align: center;
+    color: white;
+    width: 400px;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.15);
+}
+
+
+/*USERNAME*/
+
+.username{
+    margin: 20px 0;
+    position: relative;
+}
+.username input{
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    padding: 12px 12px 12px 45px;
+    border-radius: 99px;
+    outline: 3px solid transparent;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+.username::placeholder{
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    font-weight: 500;
+}
+.username input:focus{
+    outline: 3px solid rgba(255,255,255,0.3);
+}
+.username input::-ms-reveal{
+    filter: invert(100%);
+}
+.username i{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+}
+
+/*PASWORD*/
+.password{
+    margin: 20px 0;
+    position: relative;
+}
+.password input{
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    padding: 12px 12px 12px 45px;
+    border-radius: 99px;
+    outline: 3px solid transparent;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+.password::placeholder{
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    font-weight: 500;
+}
+.password input:focus{
+    outline: 3px solid rgba(255,255,255,0.3);
+}
+.password input::-ms-reveal{
+    filter: invert(100%);
+}
+.password i{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+}
+
+/*OLVIDASTE TU CONTRASEÑA*/
+.olvidastecontraseña{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 15px;
+}
+.olvidastecontraseña label{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+.olvidastecontraseña input{
+    accent-color: #fff;
+    cursor: pointer;
+}
+.olvidastecontraseña a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;  
+}
+.olvidastecontraseña a:hover{
+    text-decoration: underline;
+}
+
+/*BOTON LOGIN*/
+.btn_login{
+    width: 100%;
+    padding: 10px 0;
+    background: #2f9cf4;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn_login:hover{
+    background: #0b87ec;
+}
+
+/*CREAR CUENTA*/
+.crearcuenta{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 15px;
+}
+.crearcuenta label{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+.crearcuenta input{
+    accent-color: #fff;
+    cursor: pointer;
+}
+.crearcuenta a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;  
+}
+.crearcuenta a:hover{
+    text-decoration: underline;
+}
+
+/*Cambiar contraseña */
+.cambiarcontraseña{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 15px;
+}
+.cambiarcontraseña label{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+.cambiarcontraseña input{
+    accent-color: #fff;
+    cursor: pointer;
+}
+.cambiarcontraseña a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;  
+}
+.cambiarcontraseña a:hover{
+    text-decoration: underline;
+}
+
+/*REGRESAR LOGIN*/
+.regresarlogin{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    font-size: 15px;
+}
+.regresarlogin label{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+.regresarlogin input{
+    accent-color: #fff;
+    cursor: pointer;
+}
+.regresarlogin a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;  
+}
+.regresarlogin a:hover{
+    text-decoration: underline;
+}
+
+
+/*ICONOS*/
+/* Estilo para los enlaces de redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;  /* Ajusta el espacio entre los iconos */
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes dentro de los enlaces */
+.social-links img {
+    width: 30px;  /* Tamaño pequeño para los iconos */
+    height: 30px; /* Tamaño pequeño para los iconos */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.social-links img:hover {
+    transform: scale(1.1);  /* Hace que la imagen crezca un poco */
+    opacity: 0.8;  /* Añade un efecto de transparencia */
+}
+
+/* Asegurarse de que las imágenes mantengan su proporción */
+.social-links img {
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
